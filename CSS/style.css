@@ -96,6 +96,7 @@ nav .nav-right span:hover {
 .expand-more .expand-more span {
   transform: rotate(180deg);
 }
+
 .hero {
   width: 100%;
 }
@@ -630,6 +631,10 @@ footer {
 
 .copyright {
   background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .copyright p {
@@ -772,6 +777,10 @@ label span {
   .about-footer p {
     width: 100%;
   }
+  .footerSectionParent {
+    flex-direction: column;
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -825,6 +834,10 @@ label span {
   .text-terrain-skateboard {
     gap: 0;
   }
+  .footerSectionParent {
+    flex-direction: column;
+    width: 90%;
+  }
 }
 @media screen and (max-width: 480px) {
   .text-electric-scooter h4,
@@ -836,4 +849,70 @@ label span {
   .text-electric-scooter h1 {
     font-size: 20px;
   }
+  .footerSectionParent {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 150px;
+  z-index: 1;
+  margin-top: 1.4rem;
+  padding: 0.625rem 1.25rem;
+}
+
+.dropdown-content li {
+  display: block;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  padding: 3px;
+  scale: 1.3;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.footerSectionParent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.footerSectionParentChild2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.payment_option_view {
+  height: 1.8rem;
+  width: 1.8rem;
+  border: 1px solid lightblue;
 }
